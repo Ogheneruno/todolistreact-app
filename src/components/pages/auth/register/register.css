@@ -1,0 +1,70 @@
+.register {
+    width: 50vw;
+    padding-left: 55px;
+    margin-left: 5rem;
+    margin-top: .5rem;
+}
+
+.holder {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.MuiInputBase-formControl {
+    background-color: white;
+    border-radius: 20px !important;
+}
+
+@media screen and (max-width: 1400px) {
+    .register {
+        padding-left: 12px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .register {
+        padding-left: 13px;
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 884px) {
+    .register {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .register {
+        margin: 0 5%;
+        padding-left: 40px;
+        margin-left: 7rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .register {
+        margin: 0;
+        padding-left: 30px;
+        margin-left: 4.7rem;
+
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .register {
+        margin-top: 0;
+        padding-left: 18px;
+        margin-left: 0;
+        width: 80vw
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .register {
+        margin-top: 0;
+        padding-left: 0px;
+        margin-left: 0;
+        width: 90vw
+    }
+}
