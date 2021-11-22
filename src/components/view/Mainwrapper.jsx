@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     right: {
       backgroundColor: '#333',
       height: '100vh',
+      overflowY: 'hidden'
     },
     
   }));

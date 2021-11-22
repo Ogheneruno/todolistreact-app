@@ -59,10 +59,10 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
           onClick={() => removeTodo(todo._id)}
           className='delete-icon'
         />
-        {/* <TiEdit
+        <TiEdit
           onClick={() => setEdit({ id: todo._id, value: todo.todo })}
           className='edit-icon'
-        /> */}
+        />
         
       </div>
     </div>
