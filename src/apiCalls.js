@@ -7,7 +7,7 @@ export const loginCall = async (userCredentials, dispatch, navigate) => {
     dispatch({type: "LOGIN_START"});
 
     try {
-            let res = await axios.post('http://localhost:1000/api/v1/auth/login', userCredentials);
+            let res = await axios.post('https://todolistsreactappapi.herokuapp.com/api/v1/auth/login', userCredentials);
             if (res.data.success) toast.success(res.data.msg);
             dispatch({ type: "LOGIN_SUCCESS", payload: res.data.data });
             navigate('/todo');

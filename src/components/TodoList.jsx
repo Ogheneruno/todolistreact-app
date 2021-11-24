@@ -35,7 +35,7 @@ function TodoList() {
       data.append("todo", todo.text);
 
       try {
-        let todoRes = await axios.post('http://localhost:1000/api/v1/todo',
+        let todoRes = await axios.post('https://todolistsreactappapi.herokuapp.com/api/v1/todo',
         data,
         
         {
@@ -63,7 +63,7 @@ function TodoList() {
     if (newValue) {
       const data = {todo: newValue.text};
       try {
-        let updateTodoRes = await axios.put(`http://localhost:1000/api/v1/todo/put/${todoId}`,
+        let updateTodoRes = await axios.put(`https://todolistsreactappapi.herokuapp.com/api/v1/todo/put/${todoId}`,
         data
         );
         if (updateTodoRes.data.success) return toast.success(updateTodoRes.data.msg);  
@@ -82,7 +82,7 @@ function TodoList() {
 
     try {
 			let removeTodoRes = await axios.delete(
-				`http://localhost:1000/api/v1/todo/delete/${id}`,
+				`https://todolistsreactappapi.herokuapp.com/api/v1/todo/delete/${id}`,
 				{
 					headers: {
 						"content-type": "application/json",
@@ -144,7 +144,7 @@ function TodoList() {
   };
 
   const getAllTodos = async () => {
-    let res = await axios.get("http://localhost:1000/api/v1/todo", {headers: {
+    let res = await axios.get("https://todolistsreactappapi.herokuapp.com/api/v1/todo", {headers: {
             'content-type': 'application/json',
             'access-token': user ? user.token : ""
         }
@@ -156,7 +156,7 @@ function TodoList() {
 
   useEffect(() => {
     getAllTodos();
-  }, [todos]);
+  }, [allTodos]);
 
   useEffect(() => {
     // addTodo();
